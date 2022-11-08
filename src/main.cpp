@@ -128,16 +128,16 @@ void defuzzy(){
   }
   healthDecision = num/denum;
   if (healthDecision==U){
-    healthDecisionString = "Unhealthy";
+    healthDecisionString = "U";
   }
   else if (healthDecision==LH){
-    healthDecisionString = "Less Healthy";
+    healthDecisionString = "LH";
   }
   else if (healthDecision==SH){
-    healthDecisionString = "Somewhat Healthy";
+    healthDecisionString = "SH";
   }
   else if (healthDecision==H){
-    healthDecisionString = "Healthy";
+    healthDecisionString = "H";
   }
 }
 
