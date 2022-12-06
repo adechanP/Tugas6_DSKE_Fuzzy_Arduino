@@ -12,14 +12,22 @@ float healthDecision;
 String healthDecisionString;
 
 //Fuzzy Points
-int vShort    = 115; int vSlim     = 65;  
-int Short_1   = 126; int Slim_1    = 74;  
-int Short_2   = 149; int Slim_2    = 90;  
-int hMedium_1 = 163; int wMedium_1 = 97;  
-int hMedium_2 = 182; int wMedium_2 = 113;
-int Tall_1    = 195; int Heavy_1   = 122;
-int Tall_2    = 218; int Heavy_2   = 140;
-int vTall     = 228; int vHeavy    = 148;
+int vShort    = 115; 
+int vSlim     = 65;  
+int Short_1   = 126; 
+int Slim_1    = 74;  
+int Short_2   = 149; 
+int Slim_2    = 90;  
+int hMedium_1 = 163; 
+int wMedium_1 = 97;  
+int hMedium_2 = 182; 
+int wMedium_2 = 113;
+int Tall_1    = 195; 
+int Heavy_1   = 122;
+int Tall_2    = 218; 
+int Heavy_2   = 140;
+int vTall     = 228; 
+int vHeavy    = 148;
 
 float U  = 0.2;
 float LH = 0.4;
