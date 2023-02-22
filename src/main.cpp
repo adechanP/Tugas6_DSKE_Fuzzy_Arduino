@@ -176,7 +176,7 @@ void loop() {
   defuzzy();
 
   lcd.setCursor(6, 0); lcd.print("D: ");
-  lcd.setCursor(8, 0); lcd.print(healthDecision);
+  lcd.setCursor(8, 0); lcd.print(healthDecisionString);
 
   delay(50);
 }
