@@ -159,24 +159,25 @@ void setup() {
 
 void loop() {
   lcd.clear();
-
   int height = analogRead(A0);
   int weight = analogRead(A1);
 
   height = map(height, 0, 1023, 100, 240);
   weight = map(weight, 0, 1023, 60, 160);
-  lcd.setCursor(0, 0); lcd.print("H: ");
-  lcd.setCursor(2, 0); lcd.print(height);
-  lcd.setCursor(0, 1); lcd.print("W: ");
-  lcd.setCursor(2, 1); lcd.print(weight);
+  lcd.setCursor(0, 0); lcd.print("Height: ");
+  lcd.setCursor(8, 0); lcd.print(height);
+  lcd.setCursor(0, 1); lcd.print("Weight: ");
+  lcd.setCursor(8, 1); lcd.print(weight);
 
   heightFuzzy(height);
   weightFuzzy(weight);
   rulesOperation();
   defuzzy();
 
-  lcd.setCursor(6, 0); lcd.print("D: ");
-  lcd.setCursor(8, 0); lcd.print(healthDecisionString);
+  delay(2000);
+  lcd.clear();
+  lcd.setCursor(0, 0); lcd.print("Health: ");
+  lcd.setCursor(0, 1); lcd.print(healthDecisionString);
 
-  delay(50);
+  delay(2000);
 }
